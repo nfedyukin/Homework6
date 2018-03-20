@@ -13,30 +13,17 @@ class DB
             $config->getParamValue('pass'));
     }
 
-    public function execute(string $sql, array $data) :bool
+    public function execute(string $sql, array $data = []) :bool
     {
         $sth = $this->dbh->prepare($sql);
         return $sth->execute($data);
     }
 
-    public function query(string $sql, array $data, string $className = null)
+    public function query(string $sql, array $data = [], string $className = null)
     {
         $sth = $this->dbh->prepare($sql);
         if($sth->execute($data)){
-            $n = [];
-            if($className != null)
-            {
-                foreach($sth->fetchAll() as $row)
-                {
-                   $n[] = new $className($row['id'], $row['created'], $row['headline'],
-                       $row['text'], $row['author']);
-                }
-            } else {
-                $n = $sth->fetchAll();
-            }
-
-            return $n;
-
+            return $sth->fetchAll(PDO::FETCH_CLASS, $className);
         } else {
             return false;
         }

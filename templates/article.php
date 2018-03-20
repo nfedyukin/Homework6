@@ -1,5 +1,5 @@
 <?php
-$newsList = $this->data['DB']->query($this->data['qry'],$this->data['dat'],'\News\Article');
+$newsList = $this->data['newslist'][0];
 ?>
 <!doctype html>
 <html lang="ru">
@@ -8,19 +8,19 @@ $newsList = $this->data['DB']->query($this->data['qry'],$this->data['dat'],'\New
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?php echo $newsList[0]->getHeadline() ?></title>
+    <title><?php echo $newsList->headline ?></title>
 </head>
 <body>
 <h1>
-    <?php echo $newsList[0]->getHeadline() ?>
+    <?php echo $newsList->headline ?>
 </h1>
 <i>
-    <?php echo $newsList[0]->getCreated() ?>
+    <?php echo $newsList->created ?>
 </i><br>
-<?php echo $newsList[0]->getText() ?>
+<?php echo $newsList->text ?>
 <hr>
 <i>
-    <?php echo $newsList[0]->getAuthor() ?>
+    <?php echo $newsList->author ?>
 </i>
 </body>
 </html>

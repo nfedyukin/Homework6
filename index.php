@@ -2,11 +2,11 @@
 
 require_once __DIR__ . '/boot.php';
 
-$qry = 'SELECT * FROM news ORDER BY id DESC';
+$query = 'SELECT * FROM news ORDER BY id DESC';
 
 $view = new View();
-$view ->add('DB', new DB);
-$view ->add('qry', $qry);
-$view ->add('dat', []);
+$db = new DB;
+$view ->add('newslist', $db->query($query,[],\News\Article::class));
+
 
 $view->display(__DIR__ . '/templates/index.php');

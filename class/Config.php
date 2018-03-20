@@ -7,12 +7,7 @@ class Config
 
     public function __construct($path)
     {
-        $lines = file($path, FILE_IGNORE_NEW_LINES);
-
-        foreach($lines as $line){
-            [$k,$v] = explode('|', $line);
-            $this->config[$k] = $v;
-        }
+        $this->config = include($path);
     }
 
     public function getParamValue(string $paramName)

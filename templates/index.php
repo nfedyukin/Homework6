@@ -1,5 +1,5 @@
 <?php
-$newsList = $this->data['DB']->query($this->data['qry'],$this->data['dat'],'\News\Article');
+$newsList = $this->data['newslist'];
 ?>
 
 <!doctype html>
@@ -16,10 +16,10 @@ $newsList = $this->data['DB']->query($this->data['qry'],$this->data['dat'],'\New
 <?php
 foreach ($newsList as $news)
 {
-    ?><i><?php echo $news->getCreated()?> </i> : <a href="/Homework6/article.php?id=<?php echo $news->getId() ?>">
+    ?><i><?php echo $news->created?> </i> : <a href="/Homework6/article.php?id=<?php echo $news->id ?>">
     <?php
-    echo $news->getHeadline();?></a> <br> <?php
-    echo $news->getText();?><br><?php
+    echo $news->headline;?></a> <br> <?php
+    echo $news->text;?><br><?php
 }
 ?>
 

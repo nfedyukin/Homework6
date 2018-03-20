@@ -4,7 +4,7 @@
 CREATE DATABASE news;
 
 -------------------------------
-CREATE TABLE news.news
+CREATE TABLE news
 (
     id SERIAL,
     created VARCHAR(20),
@@ -14,14 +14,14 @@ CREATE TABLE news.news
 );
 --------------------------------
 
-INSERT INTO news.news
+INSERT INTO news
 (created, headline, text, author)
 VALUES
   ('01.01.2018 12:00:00', 'Заголовок первой новости', 'Текст первой новости', 'Автор новости');
 
 -------------------------------
 
-INSERT INTO news.news
+INSERT INTO news
 (created, headline, text, author)
 VALUES
   ('02.01.2018 12:00:00', 'Headline of the second news', 'Text of the second news', 'Mr Author');
@@ -29,7 +29,8 @@ VALUES
 
 -------------------------------
 
-INSERT INTO news.news
+INSERT INTO news
+INSERT INTO news
 (created, headline, text, author)
 VALUES
   ('16.03.2018 00:01:00', 'Apple остановила производство iPhone',
