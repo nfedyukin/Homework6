@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c246b8ba-ff84-4e6f-8a20-9473852629fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/article.php" afterPath="$PROJECT_DIR$/article.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/class/Config.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/DB.php" afterPath="$PROJECT_DIR$/class/DB.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,11 +52,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DB.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DB.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/class/DB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+            <state relative-caret-position="220">
+              <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -67,16 +67,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/class/Config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -127,7 +117,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="article.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="article.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/article.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
@@ -147,7 +137,6 @@
       <list>
         <option value="$PROJECT_DIR$/class/News/News.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1f9c3668-2641-4444-9e77-a148d3ef8390/console.sql" />
-        <option value="$PROJECT_DIR$/class/DB.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/class/Config.php" />
         <option value="$PROJECT_DIR$/config/db.cfg" />
@@ -156,6 +145,7 @@
         <option value="$PROJECT_DIR$/class/News/Article.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/article.php" />
+        <option value="$PROJECT_DIR$/class/DB.php" />
       </list>
     </option>
   </component>
@@ -356,12 +346,12 @@
       <workItem from="1521057070552" duration="6955000" />
       <workItem from="1521141116557" duration="9409000" />
       <workItem from="1521396837515" duration="4659000" />
-      <workItem from="1521572168683" duration="9762000" />
+      <workItem from="1521572168683" duration="10040000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30785000" />
+    <option name="totallyTimeSpent" value="31063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1893" y="171" width="1936" height="1056" extended-state="0" />
@@ -708,14 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/class/DB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/class/View.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -773,6 +755,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="53" lean-forward="false" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
           <folding />
         </state>
       </provider>

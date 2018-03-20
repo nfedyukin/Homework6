@@ -6,11 +6,11 @@ class DB
 
     public function __construct()
     {
-        $config = new Config(__DIR__ . '/../config/db.cfg');
+        $config = include(__DIR__ . '/../config/db.cfg');
 
-        $this->dbh = new PDO($config->getParamValue('dsn'),
-            $config->getParamValue('username'),
-            $config->getParamValue('pass'));
+        $this->dbh = new PDO($config['dsn'],
+            $config['username'],
+            $config['pass']);
     }
 
     public function execute(string $sql, array $data = []) :bool
