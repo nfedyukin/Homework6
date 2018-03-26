@@ -8,8 +8,16 @@ if(isset($_GET['id']))
 {
     $query = 'SELECT * FROM news WHERE id = :id';
     $db = new DB;
-    $view->add('newslist', $db->query($query,[':id'=>$_GET['id']],\News\Article::class));
-    $view->display(__DIR__ . '/templates/article.php');
+    $news =  $db->query($query,[':id'=>$_GET['id']],\News\Article::class);
+    if($news)
+    {
+        $view->add('news', $news[0]);
+        $view->display(__DIR__ . '/templates/article.php');
+    } else
+    {
+        $view->display(__DIR__ . '/templates/404.php');
+    }
+
 }
 else
 {

@@ -1,5 +1,5 @@
 <?php
-$newsList = $this->data['newslist'][0];
+$news = $this->data['news'];
 ?>
 <!doctype html>
 <html lang="ru">
@@ -8,19 +8,19 @@ $newsList = $this->data['newslist'][0];
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?php echo $newsList->headline ?></title>
+    <title><?php echo $news->headline ?></title>
 </head>
 <body>
 <h1>
-    <?php echo $newsList->headline ?>
+    <?php echo $news->headline ?>
 </h1>
 <i>
-    <?php echo $newsList->created ?>
+    <?php echo $news->created ?>
 </i><br>
-<?php echo $newsList->text ?>
+<?php echo $news->text ?>
 <hr>
 <i>
-    <?php echo $newsList->author ?>
+    <?php echo $news->author ?>
 </i>
 </body>
 </html>

@@ -6,7 +6,7 @@ class DB
 
     public function __construct()
     {
-        $config = include(__DIR__ . '/../config/db.cfg');
+        $config = include __DIR__ . '/../config/db.cfg';
 
         $this->dbh = new PDO($config['dsn'],
             $config['username'],

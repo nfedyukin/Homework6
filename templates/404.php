@@ -8,8 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-<h1>Оибка 404</h1>
+<h1>Ошибка 404</h1>
 <br>
-<a href="/Homework5/newssection.php">Назад</a>
+<a href="/Homework6/index.php">Назад</a>
 </body>
 </html>
